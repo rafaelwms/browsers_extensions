@@ -1,21 +1,21 @@
 // get the buttons by id
-let aliceblue = document.getElementById('aliceblue');
-let cornsilk = document.getElementById('cornsilk');
-let reset = document.getElementById('reset');
+const btndark = document.getElementById('dark');
+const btnamarelado = document.getElementById('amarelado');
+const btnreset = document.getElementById('reset');
 
 // use tabs.insertCSS to change header color on button click
 
 // aliceblue
-aliceblue.onclick = () => {
-  browser.tabs.insertCSS({code: "body { background: aliceblue !important; }"});
+btndark.onclick = () => {
+  chrome.tabs.insertCSS({code: "body { background: black !important; }"});
 };
 
 // cornsilk
-cornsilk.onclick = () => {
-  browser.tabs.insertCSS({code: "body { background: cornsilk !important; }"});
+btnamarelado.onclick = () => {
+  chrome.tabs.insertCSS({code: "body { background: cornsilk !important; }"});
 };
 
 // back to original
-reset.onclick = () => {
-  browser.tabs.insertCSS({code: "body { background: none !important; }"});
+btnreset.onclick = () => {
+  chrome.tabs.insertCSS({code: "body { background: none !important; }"});
 };

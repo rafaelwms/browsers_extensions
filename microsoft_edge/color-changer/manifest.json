@@ -1,11 +1,11 @@
 {
     "manifest_version": 2, 
     "name": "Color Changer",
-    "author": "Microsoft Edge Extension Developer",
+    "author": "Rafael WMS",
     "version": "1.0",
-    "description": "Change the color of the body on docs.microsoft.com",
+    "description": "Muda as cores do body.",
     "permissions": [
-      "*://docs.microsoft.com/*",
+      "*://rafaelwms.com.br/*",
       "tabs"
     ], 
     "browser_action": {
